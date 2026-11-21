@@ -11,7 +11,7 @@ FullRadar is a weather forecast application featuring a Python backend built fro
 - Flexible Units: View forecasts in Celsius (°C) or Fahrenheit (°F).
 - 7-Day Forecast: Detailed daily breakdown including maximum/minimum temperatures, precipitation probability, sunrise, and sunset times.
 
- 🛠️ Built With
+ Built With
 
 - Python (Backend logic, data persistence, and CLI architecture)
 - Open-Meteo API (Free weather and geocoding data)
@@ -23,7 +23,7 @@ FullRadar is a weather forecast application featuring a Python backend built fro
 - FullRadar.json - Local storage file for saved favorite cities (ignored by git).
 - FullRadarSettings.json - Local storage file for user language preferences (ignored by git).
 
-⚙️ Getting Started (CLI)
+ Getting Started (CLI)
 
 1. Clone the repository:
    ```bash
