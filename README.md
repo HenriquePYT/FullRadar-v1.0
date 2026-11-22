@@ -1,30 +1,64 @@
-FullRadar v1.0
+<div align="center">
+  <img src="assets/Full%20Radar%20logo.png" alt="FullRadar Logo" width="240" />
+  <h1>FullRadar v1.0</h1>
+  <p>
+    <strong>Smart Weather Forecast Application (CLI & Web)</strong>
+  </p>
+  <p>
+    <img src="https://img.shields.io/badge/Python-3.8+-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python" />
+    <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5" />
+    <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript" />
+    <img src="https://img.shields.io/badge/License-MIT-green?style=for-the-badge" alt="License MIT" />
+  </p>
+</div>
 
-FullRadar is a weather forecast application featuring a Python backend built from scratch, offering smart weather warnings, city favorites, and multi-language support. It focuses on providing useful insights that traditional weather applications don't prioritize.
+---
 
- Features
+## 📖 About the Project
 
-- Smart Weather Insights: Automated warnings for rain, high wind speeds, heat stress, low temperatures, and low humidity.
-- Activity Recommendations: Tailored advice on whether it's safe to run or go to the gym based on current meteorological conditions.
-- Favorite Cities: Save, load, and manage your favorite locations easily with local JSON persistence.
-- Multi-Language Support: Seamlessly switch between English (`en`) and Portuguese (`pt`).
-- Flexible Units: View forecasts in Celsius (°C) or Fahrenheit (°F).
-- 7-Day Forecast: Detailed daily breakdown including maximum/minimum temperatures, precipitation probability, sunrise, and sunset times.
+**FullRadar** is a weather forecast application designed to go beyond basic temperature readings. Built from scratch with a robust **343-line Python backend**, it processes real-time meteorological data to deliver **smart health and safety insights**, daily activity recommendations, and persistent favorite cities.
 
- Built With
+While traditional weather apps (such as Google Forecast) focus primarily on raw numbers, FullRadar interprets the climate for your daily routine—evaluating whether conditions are safe for outdoor running, gym workouts, or if specific precautions are needed against wind, heat stress, or low humidity.
 
-- Python (Backend logic, data persistence, and CLI architecture)
-- Open-Meteo API (Free weather and geocoding data)
-- Claude AI (Frontend web UI collaboration)
+### Development Philosophy & Creator Journey
+* **Independent Backend Engineering:** Fully designed, architected, and programmed independently in Python, focusing on clean control flow, robust error handling (`FileNotFoundError`, `JSONDecodeError`), API integration, and local JSON data persistence.
+* **Collaborative Frontend Innovation:** Built in partnership with **Claude AI** to bring a modern, animated, and responsive web interface to life. This bridges the gap while I continuously expand my skill set across frontend technologies (HTML, JavaScript, C, C++).
+* **Open Source Commitment:** Released publicly on GitHub and LinkedIn, marking the foundation of a project that will continuously evolve through ongoing updates and learning milestones.
 
- Project Structure
+---
 
-- FullRadar.py - Main application script containing core logic, menu navigation, and API requests.
-- FullRadar.json - Local storage file for saved favorite cities (ignored by git).
-- FullRadarSettings.json - Local storage file for user language preferences (ignored by git).
+## ✨ Key Features
 
- Getting Started (CLI)
+### 🧠 Smart Weather Insights & Alerts
+FullRadar automatically analyzes incoming data and triggers contextual warnings:
+* **Rain Detection:** Immediate precipitation alerts and precaution advisories.
+* **Wind Speed Monitoring:** High-wind warnings when speeds exceed **20 km/h**, advising against flat-surface outdoor activities.
+* **Heat Stress Index:** Alerts when the apparent temperature exceeds the actual air temperature by **2°C or more**, recommending hydration and shade.
+* **Cold & Low Humidity Advisories:** Automatic warnings when temperatures drop below **15°C** or relative humidity falls under **30%**[cite: 1].
 
-1. Clone the repository:
-   ```bash
-   git clone [https://github.com/YOUR_USERNAME/FullRadar.git](https://github.com/YOUR_USERNAME/FullRadar.git)
+### 🏃‍♂️ Daily Activity Recommendations
+Using a rule-based evaluation engine, FullRadar advises on daily physical activities[cite: 1]:
+* **Outdoor Running:** Evaluates temperature extremes (`> 30°C` or `<= 10°C`), low humidity (`<= 30%`), strong winds (`>= 10 km/h`), and active precipitation[cite: 1].
+* **Gym Workouts:** Assesses heat stress, indoor humidity discomfort, and commute rain conditions[cite: 1].
+
+### 🌍 Multi-Language & Unit Flexibility
+* **Bilingual Support:** Instant switching between **English (`en`)** and **Portuguese (`pt`)**, with user preferences saved locally[cite: 1].
+* **Unit Conversion:** Toggle seamlessly between **Celsius (`°C`)** and **Fahrenheit (`°F`)** without altering underlying safety thresholds[cite: 1].
+
+### ⭐ Persistent Favorites & 7-Day Forecast
+* **City Management:** Save, load, view all, and remove favorite cities with automatic local storage (`FullRadar.json` on CLI / `localStorage` on Web)[cite: 1].
+* **Extended Outlook:** 7-day forecast featuring daily minimum/maximum temperature ranges, precipitation probabilities, and sunrise/sunset tracking[cite: 1].
+
+---
+
+## 🏗️ Repository Structure
+
+```text
+FullRadar/
+├── assets/
+│   └── Full Radar logo.png   # FullRadar official brand logo
+├── FullRadar.py              # Core Python backend & interactive CLI application
+├── fullradar.html            # Responsive web interface with dynamic sky canvas
+├── README.md                 # Project documentation
+├── LICENSE                   # MIT License
+└── .gitignore                # Ignores local user JSON databases and Python cache
