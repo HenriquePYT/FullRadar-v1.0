@@ -31,23 +31,23 @@ While traditional weather apps (such as Google Forecast) focus primarily on raw 
 
 ### 🧠 Smart Weather Insights & Alerts
 FullRadar automatically analyzes incoming data and triggers contextual warnings:
-* **Rain Detection:** Immediate precipitation alerts and precaution advisories[cite: 1].
-* **Wind Speed Monitoring:** High-wind warnings when speeds exceed **20 km/h**, advising against flat-surface outdoor activities[cite: 1].
-* **Heat Stress Index:** Alerts when the apparent temperature exceeds the actual air temperature by **2°C or more**, recommending hydration and shade[cite: 1].
-* **Cold & Low Humidity Advisories:** Automatic warnings when temperatures drop below **15°C** or relative humidity falls under **30%**[cite: 1].
+* **Rain Detection:** Immediate precipitation alerts and precaution advisories.
+* **Wind Speed Monitoring:** High-wind warnings when speeds exceed **20 km/h**, advising against flat-surface outdoor activities.
+* **Heat Stress Index:** Alerts when the apparent temperature exceeds the actual air temperature by **2°C or more**, recommending hydration and shade.
+* **Cold & Low Humidity Advisories:** Automatic warnings when temperatures drop below **15°C** or relative humidity falls under **30%**.
 
 ### 🏃‍♂️ Daily Activity Recommendations
-Using a rule-based evaluation engine, FullRadar advises on daily physical activities[cite: 1]:
-* **Outdoor Running:** Evaluates temperature extremes (`> 30°C` or `<= 10°C`), low humidity (`<= 30%`), strong winds (`>= 10 km/h`), and active precipitation[cite: 1].
-* **Gym Workouts:** Assesses heat stress, indoor humidity discomfort, and commute rain conditions[cite: 1].
+Using a rule-based evaluation engine, FullRadar advises on daily physical activities:
+* **Outdoor Running:** Evaluates temperature extremes (`> 30°C` or `<= 10°C`), low humidity (`<= 30%`), strong winds (`>= 10 km/h`), and active precipitation.
+* **Gym Workouts:** Assesses heat stress, indoor humidity discomfort, and commute rain conditions.
 
 ### 🌍 Multi-Language & Unit Flexibility
-* **Bilingual Support:** Instant switching between **English (`en`)** and **Portuguese (`pt`)**, with user preferences saved locally[cite: 1].
-* **Unit Conversion:** Toggle seamlessly between **Celsius (`°C`)** and **Fahrenheit (`°F`)** without altering underlying safety thresholds[cite: 1].
+* **Bilingual Support:** Instant switching between **English (`en`)** and **Portuguese (`pt`)**, with user preferences saved locally.
+* **Unit Conversion:** Toggle seamlessly between **Celsius (`°C`)** and **Fahrenheit (`°F`)** without altering underlying safety thresholds.
 
 ### ⭐ Persistent Favorites & 7-Day Forecast
-* **City Management:** Save, load, view all, and remove favorite cities with automatic local storage (`FullRadar.json` on CLI / `localStorage` on Web)[cite: 1].
-* **Extended Outlook:** 7-day forecast featuring daily minimum/maximum temperature ranges, precipitation probabilities, and sunrise/sunset tracking[cite: 1].
+* **City Management:** Save, load, view all, and remove favorite cities with automatic local storage (`FullRadar.json` on CLI / `localStorage` on Web).
+* **Extended Outlook:** 7-day forecast featuring daily minimum/maximum temperature ranges, precipitation probabilities, and sunrise/sunset tracking.
 
 ---
 
@@ -56,9 +56,9 @@ Using a rule-based evaluation engine, FullRadar advises on daily physical activi
 ```text
 FullRadar/
 ├── assets/
-│   └── logo.png              # FullRadar official brand logo[cite: 2]
-├── FullRadar.py              # Core Python backend & interactive CLI application[cite: 1]
-├── fullradar.html            # Responsive web interface with dynamic sky canvas[cite: 1]
-├── README.md                 # Project documentation[cite: 1]
-├── LICENSE                   # MIT License[cite: 1]
-└── .gitignore                # Ignores local user JSON databases and Python cache[cite: 1]
+│   └── logo.png              # FullRadar official brand logo
+├── FullRadar.py              # Core Python backend & interactive CLI application
+├── fullradar.html            # Responsive web interface with dynamic sky canvas
+├── README.md                 # Project documentation
+├── LICENSE                   # MIT License
+└── .gitignore                # Ignores local user JSON databases and Python cache
